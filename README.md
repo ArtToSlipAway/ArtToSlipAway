@@ -1,72 +1,62 @@
 # ArtToSlipAway
 
-### Python / FastAPI / PostgreSQL / Docker / Linux
+### Python · FastAPI · PostgreSQL · Docker · Linux
 
-Разрабатываю прикладные backend-системы и автоматизацию вокруг реальных бизнес-задач.
+Разрабатываю прикладные backend-системы и автоматизацию для реальных рабочих процессов.
 
-Мой основной проект — собственная платформа для художественной и тату-практики:
-публичный сайт, CRM, заявки клиентов, закрытый клиентский кабинет, работа с файлами,
-административная панель и серверная инфраструктура.
+Основной фокус — Python backend, интеграции с внешними API, PostgreSQL,
+Linux-инфраструктура, тестирование и эксплуатация production-сервисов.
 
-## Основной проект
+## Проекты
 
 ### [ArtToSlipAway Website](https://github.com/ArtToSlipAway/arttoslipaway-website)
 
-Production-проект, подготовленный также в отдельной безопасной демонстрационной версии для GitHub.
+Production-сайт и CRM для работы с клиентами.
 
-**Что реализовано:**
+Реализовано:
 
-- FastAPI backend;
-- PostgreSQL;
-- административная CRM;
-- формы заявок и клиентские сценарии;
-- защищённая выдача приватных файлов;
-- клиентские ссылки с ограниченным сроком действия;
-- Docker Compose;
-- GitHub Actions;
+- FastAPI backend и PostgreSQL;
+- формы заявок и административная CRM;
+- клиентский кабинет и защищённая работа с файлами;
+- временные клиентские ссылки;
+- Docker Compose и GitHub Actions;
 - unit и integration tests;
 - VPS / Linux / systemd / reverse proxy / HTTPS;
 - резервное копирование и восстановление;
-- hardening SSH и сервисов;
-- проверка Python-зависимостей на известные уязвимости.
+- hardening SSH, сервисов и прав доступа.
 
-**Проверки проекта:** 19 unit-тестов + интеграционный сценарий через PostgreSQL.
+Рабочий сайт: [arttoslipaway.art](https://arttoslipaway.art)
+
+### [Clippy Assistant](https://github.com/ArtToSlipAway/clippy-assistant)
+
+Персональный Telegram AI-ассистент для планирования и автоматизации.
+
+Реализовано:
+
+- Telegram-интерфейс на aiogram;
+- OpenAI API и tool calling;
+- Google Calendar и Google Tasks;
+- OAuth и service-account интеграции;
+- локальная память на SQLite;
+- проекты и next actions;
+- голосовой ввод и ответы;
+- HTTP gateway для внешних интеграций;
+- очереди, подтверждения действий и аудит.
 
 ## Технологии
 
 `Python` `FastAPI` `PostgreSQL` `SQL` `Docker` `Linux` `systemd`  
-`Git` `GitHub Actions` `Nginx/Caddy` `Jinja2` `JavaScript` `REST API`
+`Git` `GitHub Actions` `REST API` `OAuth` `SQLite` `aiogram`
 
-Также работаю с:
+## Практический опыт
 
-- Google Calendar / Google Tasks API;
-- Telegram Bot API;
-- OpenAI API;
-- OAuth;
-- серверной диагностикой и логами;
-- безопасной работой с credentials и пользовательскими файлами.
+Работаю с полным циклом небольшого production-проекта:
+от постановки задачи и проектирования пользовательского сценария
+до тестирования, диагностики, deployment и проверки результата на сервере.
 
-## Как я работаю
-
-Я начинаю с бизнес-задачи и пользовательского сценария, затем проектирую решение,
-реализую его, тестирую и проверяю уже в рабочей среде.
-
-AI-инструменты использую как инструмент разработки: для генерации вариантов,
-рефакторинга, анализа и code review. Архитектурные решения, постановку задач,
-проверку результата, диагностику и внедрение контролирую самостоятельно.
-
-## Сейчас изучаю
-
-- backend-разработку на Python глубже;
-- проектирование API;
-- архитектуру приложений;
-- тестирование;
-- DevOps и безопасность Linux-сервисов.
-
-## Проекты
-
-- [ArtToSlipAway Website](https://github.com/ArtToSlipAway/arttoslipaway-website) — сайт + CRM + клиентский кабинет.
-- [Clippy Assistant](https://github.com/ArtToSlipAway/clippy-assistant) — персональный Telegram AI-ассистент с OpenAI, Google Calendar и Google Tasks.
+AI-инструменты использую как помощника при написании, рефакторинге
+и ревью кода. Архитектурные решения, постановку задач, тестирование,
+диагностику и внедрение изменений контролирую самостоятельно.
 
 ## Контакты
 
