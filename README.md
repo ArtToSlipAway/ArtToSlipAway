@@ -66,7 +66,7 @@ AI-инструменты использую как инструмент раз�
 ## Проекты
 
 - [ArtToSlipAway Website](https://github.com/ArtToSlipAway/arttoslipaway-website) — сайт + CRM + клиентский кабинет.
-- **Clippy** — персональный Telegram-ассистент с Google Calendar, Google Tasks и OpenAI API. Подготовка публичной версии для GitHub.
+- [Clippy Assistant](https://github.com/ArtToSlipAway/clippy-assistant) — персональный Telegram AI-ассистент с OpenAI, Google Calendar и Google Tasks.
 
 ## Контакты
 
