@@ -56,6 +56,21 @@ Production-репозиторий приватный.
 **Public sanitized demo:**  
 https://github.com/ArtToSlipAway/clippy-ai-assistant-demo
 
+### Internal Control Center
+
+Внутренняя web-панель для доступа к служебным инструментам и production-сервисам.
+
+Архитектура доступа:
+
+- приложение не публикуется напрямую в интернет;
+- backend слушает только локальный/private интерфейс;
+- доступ с Mac, iPhone и iPad идёт через приватный Tailscale tailnet;
+- публичный HTTP/HTTPS ingress для панели отключён;
+- production endpoint, конфигурация и исходный код панели остаются приватными.
+
+Этот кейс показывает практическую настройку private-access инфраструктуры
+для внутренних административных инструментов без публичной экспозиции сервиса.
+
 ## Source-code policy
 
 Рабочие production-репозитории, инфраструктурные конфигурации,
