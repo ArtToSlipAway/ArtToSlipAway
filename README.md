@@ -51,7 +51,10 @@ Google Calendar и Google Tasks.
 - HTTP gateway;
 - автоматизация задач и проектов.
 
-Production-репозиторий приватный. Отдельная sanitized demo-версия готовится для портфолио.
+Production-репозиторий приватный.
+
+**Public sanitized demo:**  
+https://github.com/ArtToSlipAway/clippy-ai-assistant-demo
 
 ## Source-code policy
 
