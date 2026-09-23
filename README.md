@@ -1,37 +1,67 @@
-# ArtToSlipAway · Дмитрий Папиш
+# Дмитрий Папиш
 
-### Python backend · FastAPI · PostgreSQL · Telegram · AI-интеграции
+### Python Backend · FastAPI · PostgreSQL · AI Automation
 
-Разрабатываю и эксплуатирую собственные прикладные сервисы: от сценария клиента и схемы данных до тестов, развёртывания и проверки на рабочем сервере. Основной фокус — Python backend, API-интеграции и автоматизация.
+Разрабатываю backend-системы, API-интеграции и автоматизацию реальных рабочих процессов.
 
-## Что уже реализовано
+Основной стек:
 
-### [ArtToSlipAway](https://github.com/ArtToSlipAway/arttoslipaway-website)
+`Python` `FastAPI` `PostgreSQL` `SQL` `Docker` `Linux` `systemd`  
+`Git` `GitHub Actions` `REST API` `OAuth 2.0` `SQLite` `aiogram`
 
-Рабочий [сайт и CRM](https://arttoslipaway.art) для тату-проектов: FastAPI, PostgreSQL, клиентский кабинет, формы заявок, приватные вложения, медиатека, свободные даты из Google Calendar, административные инструменты и резервное копирование. Публичный репозиторий содержит **обезличенную демоверсию**, а не весь код production.
+## Проекты
 
-- Клиентский Telegram-бот на aiogram ведёт два варианта брифа, принимает референсы и сохраняет диалог, ответы AI и данные заявки в общей CRM. Первое обычное сообщение создаёт карточку клиента; повторная доставка не создаёт дубль. Для сложного вопроса предусмотрена передача разговора мастеру.
-- На сайте работают AI в кабинете клиента и отдельный публичный AI-чат. Вопросы публичного чата сохраняются в PostgreSQL; для него включены ограничения расхода. На 22 сентября 2026 года страницы сайта прошли проверку после обновления. Контролируемый живой диалог через новую кнопку кабинета ещё предстоит проверить.
-- В админке есть отдельная вкладка «Контент», связанная с медиатекой. AI готовит варианты подписи для сайта, Telegram и VK, которые мастер редактирует и утверждает. Черновики и журнал хранятся в PostgreSQL. Автоматическая публикация пока **выключена**; публикации в Telegram, VK и Instagram через этот контур не подтверждались.
+### ArtToSlipAway — Web Platform
 
-### [Clippy Assistant](https://github.com/ArtToSlipAway/clippy-assistant)
+Production web-продукт и CRM на FastAPI / PostgreSQL.
 
-Персональный Telegram AI-ассистент: OpenAI API с инструментами, Google Calendar и Tasks, память SQLite, голос, работа с документами, защищённый HTTP gateway и подтверждение чувствительных действий. Публичный репозиторий обезличен. Отдельная интеграция читает сводки CRM; права на изменение клиентских записей ей не выдаются.
+В проекте реализованы:
 
-## В работе
+- FastAPI backend;
+- PostgreSQL;
+- CRM и административная часть;
+- клиентский кабинет;
+- защищённая работа с файлами;
+- REST API;
+- интеграции с Telegram и Google API;
+- Docker / CI;
+- тестирование;
+- Linux / Nginx / systemd / HTTPS;
+- резервное копирование и эксплуатация production-сервисов.
 
-- Сквозная ручная проверка последних Telegram-кнопок и нового AI-сценария в кабинете клиента.
-- Публикация контента после проверки прав на конкретные медиа, очереди и отсутствия дублей: сначала Telegram с одобрением мастера, затем VK.
-- Подключение сообщений VK к общей CRM. Instagram рассматривается только через официальный API после проверки доступных прав и правового режима для РФ.
-- Полный тест восстановления сервисов из резервных копий в отдельной среде и завершение разделения старых межсервисных секретов.
+**Public case study:**  
+https://github.com/ArtToSlipAway/arttoslipaway-web-case-study
 
-## Стек и подход
+**Production:**  
+https://arttoslipaway.art
 
-Python · FastAPI · PostgreSQL · SQL · aiogram · Docker Compose · Linux · systemd · GitHub Actions · REST API · OAuth · SQLite
+### Clippy Assistant
 
-Проверяю изменения тестами и контрольными запросами после развёртывания. AI-инструменты помогают в разработке; постановку задач, архитектурные решения и проверку результата контролирую самостоятельно.
+Персональный AI-ассистент на Python / aiogram с интеграциями OpenAI API,
+Google Calendar и Google Tasks.
+
+Реализованы:
+
+- Telegram-интерфейс;
+- OpenAI API и tool calling;
+- Google Calendar / Tasks;
+- OAuth и service-account интеграции;
+- SQLite memory;
+- voice input;
+- HTTP gateway;
+- автоматизация задач и проектов.
+
+Production-репозиторий приватный. Отдельная sanitized demo-версия готовится для портфолио.
+
+## Source-code policy
+
+Рабочие production-репозитории, инфраструктурные конфигурации,
+credentials и пользовательские данные являются приватными.
+
+Публичные GitHub-репозитории содержат только специально подготовленные
+portfolio / sanitized материалы.
 
 ## Контакты
 
-- [Сайт и портфолио](https://arttoslipaway.art)
-- [GitHub](https://github.com/ArtToSlipAway)
+- Website: https://arttoslipaway.art
+- GitHub: https://github.com/ArtToSlipAway
